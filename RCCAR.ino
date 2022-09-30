@@ -99,8 +99,8 @@ void moveBackwards(){
   Serial.println("BACKWARDS");
   digitalWrite(MotorA_Rotate, HIGH);
   digitalWrite(MotorB_Rotate, HIGH);
-  digitalWrite(MotorA_Dir, LOW);
-  digitalWrite(MotorB_Dir, LOW);
+  digitalWrite(MotorA_Dir, HIGH);
+  digitalWrite(MotorB_Dir, HIGH);
   delay(10);
 }
 
