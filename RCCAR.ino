@@ -76,15 +76,15 @@ void loop()
 
 void moveLeft(){
   Serial.println("LEFT");
-  digitalWrite(MotorA_Rotate, LOW);
-  digitalWrite(MotorB_Rotate, HIGH);
+  digitalWrite(MotorA_Rotate, HIGH);
+  digitalWrite(MotorB_Rotate, LOW);
   delay(10);
 }
 
 void moveRight(){
   Serial.println("RIGHT");
-  digitalWrite(MotorA_Rotate, HIGH);
-  digitalWrite(MotorB_Rotate, LOW);
+  digitalWrite(MotorA_Rotate, LOW);
+  digitalWrite(MotorB_Rotate, HIGH);
   delay(10);
 }
 
@@ -98,7 +98,7 @@ void moveForward(){
 void moveBackwards(){
   Serial.println("BACKWARDS");
   digitalWrite(MotorA_Rotate, HIGH);
-  digitalWrite(MotorA_Rotate, HIGH);
+  digitalWrite(MotorB_Rotate, HIGH);
   digitalWrite(MotorA_Dir, LOW);
   digitalWrite(MotorB_Dir, LOW);
   delay(10);
@@ -107,5 +107,5 @@ void moveBackwards(){
 void movestop(){
   Serial.println("STOP");
   digitalWrite(MotorA_Rotate, LOW);
-  digitalWrite(MotorA_Rotate, LOW);
+  digitalWrite(MotorB_Rotate, LOW);
 }
