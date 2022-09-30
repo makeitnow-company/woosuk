@@ -11,7 +11,6 @@ void setup() {
 }
 
 void loop() {
-  digitalWrite(MotorA_Dir, HIGH);
   digitalWrite(MotorA_Rotate, HIGH);
   digitalWrite(MotorB_Rotate, HIGH);
   delay(2000);
